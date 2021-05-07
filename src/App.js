@@ -1,14 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react';
+import { Switch, Route, BrowserRouter} from "react-router-dom";
+import {ConcentrationGame} from './ConcentrationGame';
+import {DashBoard} from './DashBoard';
 
-function App() {
+class App extends React.Component{
+    
+
+
+render(){
+
+  
   return (
+
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World!</h1>
-      </header>
+      
+
+        <BrowserRouter>
+          <Switch>
+          <Route exact path="/" component={DashBoard} />
+          <Route path="/startGame/row/:row/col/:col" component={ConcentrationGame} />
+          </Switch>
+          </BrowserRouter>
+        
     </div>
+
+
+
+
   );
+
+
+}
+  
 }
 
 export default App;

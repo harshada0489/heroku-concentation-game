@@ -1,0 +1,20 @@
+.card {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    
+    background: rgb(152, 147, 199);
+    border-radius: 6px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .image{
+    width: 40%;
+    height: 40%; 
+    visibility: hidden;
+  }
