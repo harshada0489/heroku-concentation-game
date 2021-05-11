@@ -27,18 +27,10 @@ export class DashBoard extends React.Component{
       console.log("Inside handleSubmit");
       console.log("props values = ", this.props.match.params.row);
   
-      // if(this.state.row === '' && this.state.col === ''){
-      //   alert("Please enter row and column");
-      //   return false;
-      // }else{
-  
          this.props.history.push({
           pathname: "/startGame/row/"+ this.state.inputRow + "/col/" + this.state.inputCol,
         });
-  
-      // }
-  
-  
+        
    }
    
 
