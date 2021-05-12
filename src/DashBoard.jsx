@@ -8,8 +8,8 @@ export class DashBoard extends React.Component{
 
         super(props);
         this.state ={
-          inputRow : 0,
-          inputCol : 0
+          inputRow : 2,
+          inputCol : 2
         }
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -46,7 +46,7 @@ export class DashBoard extends React.Component{
                                 <label htmlFor="inputRow">Rows</label>
                             </div>
                             <div className="col-75">
-                                <input type="text" name="inputRow" value={this.state.inputRow} onChange={this.handleChange} placeholder="Enter no. of rows" />
+                                <input type="number" max="7" name="inputRow" min="2" value={this.state.inputRow} onChange={this.handleChange} placeholder="Enter no. of rows" />
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@ export class DashBoard extends React.Component{
                                 <label htmlFor="inputCol">Column</label>
                                 </div>
                                 <div className="col-75">
-                                <input type="text" name="inputCol" value={this.state.inputCol} onChange={this.handleChange} placeholder="Enter no. of columns" />
+                                <input type="number" max="7" name="inputCol"  min="2" value={this.state.inputCol} onChange={this.handleChange} placeholder="Enter no. of columns" />
                                 </div>
                             </div>
                         </div>
