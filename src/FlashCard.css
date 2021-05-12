@@ -17,3 +17,9 @@
   background-color: #b7babd;
   transform: rotateY(180deg);
 }
+
+.frontImage{
+  width: 75%;
+  height: 75%; 
+  visibility: none;
+}
